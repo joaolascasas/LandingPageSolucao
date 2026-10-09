@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    --corBG: #F3F5FE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark {
+    --corBG: #0d0d0f;
+}
+
+body {
+    background-color: var(--corBG);
+    width: 100%;
+    height: 1970px;
+    margin: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+    object-fit: contain;
+    width: 10%;
+}
+
+header>ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    padding: 0;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+    a:hover {
+        text-decoration: underline;
+        transition: .5s;
+        transform: scale(1.2);
+        color: #4D35E2;
+    }
+}
+
+#btnVerificar {
+    background-color: #4D35E2;
+    width: 130px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+#inicio {
+    display: flex;
+    width: 100%;
+    height: 670px;
+}
+
+.roxoclaro {
+    color: #5944ff;
+}
+
+.roxo {
+    color: #4D35E2;
+}
+
+.azulado {
+    color: #141642;
+}
+
+#esquerda {
+    width: 50%;
+    height: 100%;
+    padding-left: 10%;
+
+    h4 {
+        color: #6B5AF5;
+        font-size: 0.9em;
+        font-weight: 800;
+    }
+
+    h1 {
+        color: #272967;
+        font-size: 3em;
+        font-weight: 800;
+        margin-bottom: 50px;
+    }
+
+    p {
+        width: 70%;
+        font-size: 1.2em;
+        letter-spacing: 1.5px;
+        text-align: justify;
+        margin-bottom: 50px;
+    }
+
+    .icone-email {
+        object-fit: contain;
+        width: 40px;
+        position: absolute;
+        margin-top: 2.5px;
+    }
+
+    form {
+
+        input {
+            padding-left: 35px;
+            width: 220px;
+            height: 45px;
+            border: solid 1px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        input::placeholder {
+            color: rgba(0, 0, 0, 0.25);
+        }
+
+        button {
+            background-color: #4D35E2;
+            color: white;
+            width: 210px;
+            height: 45px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            transition: .5s;
+            transform: scale(1.1);
+        }
+
+    }
+
+    #Msg {
+        font-size: 0.8em;
+        color: rgba(0, 0, 0, 0.4);
+        text-align: left;
+        font-weight: bold;
+        letter-spacing: inherit;
+        margin-top: 25px;
+    }
+}
+
+#direita {
+    width: 50%;
+
+    img {
+        object-fit: contain;
+        width: 80%;
+    }
+}
+
+
+#como-funciona {
+    width: 100%;
+    height: 450px;
+
+    div {
+        padding-left: 10%;
+
+        p {
+            color: rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+        }
+    }
+
+    main {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 200px;
+
+        .cards {
+            padding: 0;
+            width: 15%;
+            height: 100%;
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                width: 80px;
+                height: 80px;
+                background-color: #e0c5f7;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+
+            p {
+                width: 70%;
+            }
+        }
+    }
+}
+
+
+#pq-escolher {
+    display: flex;
+    width: 100%;
+    height: 350px;
+
+    div {
+        width: 40%;
+        padding-left: 10%;
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+        }
+    }
+
+    main {
+        display: flex;
+        width: 60%;
+
+        .cards2 {
+            width: 25%;
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: #e0c5f7;
+                margin-bottom: 20px;
+
+                img {
+                    object-fit: contain;
+                    width: 30px;
+                }
+
+            }
+
+            h2 {
+                    font-size: 1.2em;
+                    margin-bottom: 10px;
+                }
+
+            p{
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+
+}
+
+
+#rodape {
+    display: flex;
+    background-image: url(imagens/bgfooter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+#novidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-left: 15%;
+    width: 50%;
+
+    h5{
+        width: 50%;
+        margin-bottom: 20px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    h2{
+        width: 50%;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    h4{
+        width: 70%;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.enviar-email {
+    width: 50%;
+
+    form {
+        display: flex;
+        align-items: center;
+        height: 300px;
+
+        img{
+            object-fit: contain;
+            width: 40px;
+            position: absolute;
+            margin-top: 2px;
+        }
+        
+        input {
+            padding-left: 35px;
+            width: 280px;
+            height: 45px;
+            border: solid 1px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        input::placeholder {
+            color: rgba(0, 0, 0, 0.25);
+        }
+
+        button {
+            background-color: #4D35E2;
+            color: white;
+            width: 210px;
+            height: 45px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            transition: .5s;
+            transform: scale(1.1);
+        }
+
+    }
+}
